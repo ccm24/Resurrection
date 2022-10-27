@@ -1,0 +1,46 @@
+.Titol {
+	visibility: hidden;
+}
+header {
+	display: grid;
+	gap: 2rem;
+	align-items: center;
+	grid-template-columns: 35% 25% 35%;
+}
+nav {
+	justify-self: end;
+}
+ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0 2rem;
+}
+@supports not (gap: 1rem) {
+	li {
+		margin: 0 0.5rem;
+	}
+	li:nth-of-type(1) {
+		margin-left: 0;
+	}
+}
+.logo {
+    width:100%
+}
+.nav1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.Logo {
+    grid-row: 1;
+    grid-column: 2;
+}
+.nav2 {
+    grid-row: 1;
+    grid-column: 3;
+
+}
+.cartelera{
+	width: 30%;
+	height: 30%;
+}
